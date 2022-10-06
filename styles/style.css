@@ -78,18 +78,15 @@ a, h1, h2, h3, h4, p, div, footer, main, section  {
   bottom: 0;
 }
 
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  height: 568px;
+  width: 568px;
   background-color: #2f80ed;
   position: absolute;
   top: 64px;
   right: 0;
   z-index: -1;
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
 }
 
 .description {
