@@ -1,16 +1,7 @@
-/*
-a, h1, h2, h3, h4, p, div, footer, main, section  {
-  margin: 0;
-} */
-
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
@@ -18,7 +9,6 @@ a, h1, h2, h3, h4, p, div, footer, main, section  {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   position: relative;
   background-color: #f2f2f2;
   z-index: 1;
@@ -76,9 +66,9 @@ a, h1, h2, h3, h4, p, div, footer, main, section  {
   position: absolute;
   right: 0;
   bottom: 0;
+  object-fit: cover;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -121,17 +111,19 @@ a, h1, h2, h3, h4, p, div, footer, main, section  {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  padding-bottom: 30px;
+}
+
+.two-columns__paragraph:last-child {
+  padding: 0;
 }
 
 .two-columns__span-accent {
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .digits {
   padding: 100px 0;
-}
-
-.digits-kaufman {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,6 +154,9 @@ a, h1, h2, h3, h4, p, div, footer, main, section  {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .table__cell {
@@ -185,7 +180,7 @@ a, h1, h2, h3, h4, p, div, footer, main, section  {
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
@@ -213,8 +208,6 @@ a, h1, h2, h3, h4, p, div, footer, main, section  {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-/* position: absolute;
-  top: 50%;*/ 
 }
 
 .feynman__link {
@@ -232,20 +225,17 @@ a, h1, h2, h3, h4, p, div, footer, main, section  {
   position: relative;
   overflow: hidden;
   padding: 90px 0;
-}
-
-.theme_dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #1f1f1f;
   color: white;
   z-index: 1;
 }
 
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
-/*  color: white;
-  margin-right: 0;
-  margin-top: 80px;*/
   padding-top: 80px;
   justify-content: space-between;
 }
@@ -264,16 +254,18 @@ a, h1, h2, h3, h4, p, div, footer, main, section  {
 .footer {
   min-height: 350px;
   display: flex;
+  background-color: #1f1f1f;
+  color: white;
 }
 
-.footer__column {
+.footer__columns {
   width: 90%;
   margin: 60px auto 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.footer__column_content-copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-basis: 711px;
   flex-direction: column;
@@ -311,6 +303,8 @@ a, h1, h2, h3, h4, p, div, footer, main, section  {
 
 }
 
-.column-link_icon-padding-right {
+.footer__social-icon {
   padding-right: 10px;
+  width: 16px;
+  height: 16px;
 }
