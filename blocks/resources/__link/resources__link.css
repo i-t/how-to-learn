@@ -1,0 +1,10 @@
+.resources__link {
+  width: 270px;
+  height: 38px;
+  transition: .3s ease-out;
+}
+
+.resources__link:hover {
+  filter: invert(.9) drop-shadow(2px 2px 4px #f2f2f2);
+  /*filter: brightness(0) invert(.45) sepia(1) saturate(5) hue-rotate(175deg);*/
+}
